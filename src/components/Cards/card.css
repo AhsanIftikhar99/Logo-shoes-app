@@ -1,9 +1,12 @@
+/* Container for the button */
 .btncontainer{
+  /* Align the button to the center */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
 
+  /* Styles for the button */
   button{
     width: 150px;
     height: 50px;
@@ -12,6 +15,7 @@
     background-color: black;
     transition: all 0.4s ease;
 
+    /* Styles for the button on hover */
     &:hover{
       background-color: white;
       color: black;
@@ -19,12 +23,16 @@
     }
   }
 }
+
+/* Container for the cards */
 .card-container {
+  /* Display the cards in a row and wrap onto the next line if necessary */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly
 }
 
+/* Styles for the card */
 .card {
   border: 1px solid #ddd;
   width: 200px;
@@ -34,23 +42,27 @@
   transition: all 0.4s ease;
 }
 
+/* Styles for the card on hover */
 .card:hover {
   border-color: #008bf8;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
   z-index: 1;
  }
 
+/* Styles for the image in the card */
 .card img {
   width: 100%;
   height: auto;
   background-color: red;
 }
 
+/* Overlay for the image in the card */
 .card img::after{
   background-color: rgba(255, 0, 0, 0.5); /* Set the desired background color with opacity */
   z-index: 1; /* Ensure the overlay is above the image */
 }
 
+/* Styles for the 'Sold Out' text */
 .sold {
   margin-left: 10px;
   color: white;
